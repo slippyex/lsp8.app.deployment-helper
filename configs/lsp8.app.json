@@ -1,0 +1,20 @@
+{
+  "target": "lsp8.app.v2.zip",
+  "directories":[
+    {
+      "sourceDirectory": "../lsp8.app",
+      "targetDirectory": "./dest",
+      "patterns": ["**/*.ts", "**/*.json", "*.*", ".*", "public/**/*"],
+      "subFolder": "lsp8.app.backend",
+      "exclusions": ["**/node_modules/**", "**/*.tmp"]
+    },
+    {
+      "sourceDirectory": "../lsp8.app.frontend",
+      "targetDirectory": "./dest",
+      "patterns": ["**/*.ts", "**/*.tsx", "**/*.css", "**/*.json", "*.*", "public/**/*", ".*"],
+      "subFolder": "lsp8.app.frontend",
+      "exclusions": ["**/node_modules/**", "**/*.tmp"]
+    }
+  ]
+
+}
